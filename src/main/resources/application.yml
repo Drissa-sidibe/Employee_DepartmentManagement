@@ -1,0 +1,10 @@
+eureka:
+    client:
+      serviceUrl:
+        defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+    instance:
+      hostname: localhost
+#      The above allow Department to go and connect to Eureka
+spring:
+  application:
+    name: Employee_Department
